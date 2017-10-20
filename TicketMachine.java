@@ -105,7 +105,7 @@ public class TicketMachine
         price = price;
     }
     /**
-     * invrementar precio en 2 euros
+     * incrementar precio en 2 euros
      */
     public void subirPrecio2Euros()
     {
@@ -134,5 +134,13 @@ public class TicketMachine
     public void showPrice()
     {
         System.out.println("the price of a ticket is "+ price + "cents.");
+    }
+    
+    /**
+     * vacia el dinero de las maquinas
+     */
+    public void vaciarMaquina()
+    {
+        total = total-total;
     }
 }
