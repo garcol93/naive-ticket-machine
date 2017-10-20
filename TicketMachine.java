@@ -75,4 +75,51 @@ public class TicketMachine
         // Clear the balance.
         balance = 0;
     }
+    
+    /**
+     * devuelve el total
+     */
+    public int getTotal()
+    {
+        return total;
+    }
+    
+    /**
+     * cambia el precio del billete
+     */
+    public void setPrice(int cost)
+    {
+        price= cost;
+    }
+    /**
+     * invrementar precio en 2 euros
+     */
+    public void suirPrecio2Euros()
+    {
+        price = price + 200;
+    }
+    
+    /**
+     * reducir precio billete
+     */
+    public void discount(int amount)
+    {
+        price = price - amount;
+    }
+    
+    /**
+     * sacar un mensaje por pantalla
+     */
+    public void prompt()
+    {
+        System.out.println("PLEASE INSET THE CORRECT AMOUNT OF MONEY");
+    }
+    
+    /**
+     * imprime por pantalla el precio del billete
+     */
+    public void showPrice()
+    {
+        System.out.println("the price of a ticket is "+ price + "cents.");
+    }
 }
