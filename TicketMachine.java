@@ -23,9 +23,9 @@ public class TicketMachine
      * Note that the price must be greater than zero, and there
      * are no checks to ensure this.
      */
-    public TicketMachine(int cost)
+    public TicketMachine()
     {
-        price = cost;
+        price = 1000;
         balance = 0;
         total = 0;
     }
@@ -87,14 +87,14 @@ public class TicketMachine
     /**
      * cambia el precio del billete
      */
-    public void setPrice(int cost)
+    public void setPrice()
     {
-        price= cost;
+        price = price;
     }
     /**
      * invrementar precio en 2 euros
      */
-    public void suirPrecio2Euros()
+    public void subirPrecio2Euros()
     {
         price = price + 200;
     }
